@@ -7,7 +7,7 @@ public class enemyNavmesh : MonoBehaviour
 {
     public NavMeshAgent enemy;
     public Transform Player;
-    public LayerMask whatIsGround, whatIsPlayer;
+    public LayerMask whatIsPlayer;
     public Transform Enemypos;
 
     public float sightRange;
