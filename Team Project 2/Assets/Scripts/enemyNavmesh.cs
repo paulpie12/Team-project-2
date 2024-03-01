@@ -7,11 +7,15 @@ public class enemyNavmesh : MonoBehaviour
 {
     public NavMeshAgent enemy;
     public Transform Player;
-    public LayerMask whatIsGround, whatIsPlayer;
     public Transform Enemypos;
+    public Transform Canis;
+
+    public LayerMask whatIsPlayer;
+    public LayerMask whatIsCanis;
 
     public float sightRange;
     public bool playerInSight;
+
     private void Awake()
     {
         Player = GameObject.Find("Player").transform;
@@ -20,15 +24,23 @@ public class enemyNavmesh : MonoBehaviour
     {
         playerInSight = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 
-
-        if(playerInSight == true)
+        if (Throwable.doesDistractionExist == true)
         {
-            enemy.SetDestination(Player.position);
+            Canis = GameObject.Find("Canis(Clone)").transform;
+            enemy.SetDestination(Canis.position);
+            Debug.Log("Enemy is targeting plusie");
         }
 
-        if (playerInSight != true)
+        else if (playerInSight == true)
+        {
+            enemy.SetDestination(Player.position);
+            Debug.Log("Enemy is targeting player");
+        }
+
+        else if (playerInSight != true)
         {
             enemy.SetDestination(Enemypos.position);
+            Debug.Log("Enemy is standing still");
         }
     }
 }

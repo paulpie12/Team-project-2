@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3486857935306239281}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: distractionOrientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1414496141424250573}
   - component: {fileID: 6102299256345308547}
   - component: {fileID: 489430533130411720}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Canis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
