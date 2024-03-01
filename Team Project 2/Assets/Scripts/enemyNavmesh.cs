@@ -16,6 +16,8 @@ public class enemyNavmesh : MonoBehaviour
     public float sightRange;
     public bool playerInSight;
 
+    private bool stunned;
+
     private void Awake()
     {
         Player = GameObject.Find("Player").transform;
@@ -42,5 +44,25 @@ public class enemyNavmesh : MonoBehaviour
             enemy.SetDestination(Enemypos.position);
             Debug.Log("Enemy is standing still");
         }
+
+
+        if (stunned == true)
+        {
+            enemy.SetDestination(Enemypos.position);
+            Invoke("stunevent", 3);
+        }
+
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "bullet")
+        {
+            stunned = true;
+        }
+    }
+    private void stunevent()
+    {
+        stunned = false;
+    }
+
 }
