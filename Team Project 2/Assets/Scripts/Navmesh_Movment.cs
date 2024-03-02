@@ -8,7 +8,9 @@ public class Navmesh_Movment : MonoBehaviour
     public NavMeshAgent Enemy;
     public Transform Player;
     public Transform Distraction;
+    public Transform Enemypos;
 
+    public hit stun;
     
 
     // Start is called before the first frame update
@@ -28,9 +30,7 @@ public class Navmesh_Movment : MonoBehaviour
             Enemy.SetDestination(Distraction.position);
             Debug.Log("Donut is targeting a distraction object");
         }
-        
     }
-
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Entered collision with " + collision.gameObject.name);
