@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         //This will create drag if you are grounded, and remove it if you are in the air
         if (grounded)
         {
-            //Debug.Log("The player is grounded");
+            Debug.Log("The player is grounded");
             rb.drag = groundDrag;
             
         }
