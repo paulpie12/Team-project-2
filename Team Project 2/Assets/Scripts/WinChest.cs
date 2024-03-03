@@ -24,6 +24,8 @@ public class WinChest : MonoBehaviour
             animator.SetFloat("Blend", 1);
             animator.SetFloat("MoveY", 1);
             Invoke("WinMenu", 1);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 

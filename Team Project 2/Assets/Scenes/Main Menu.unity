@@ -287,7 +287,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 55f9e5b4a09d8bc41a429b3d7df51026, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95c15c78e8e6ba74384611491b9fdf7f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b642c8b0d2dd2a34dbe30095da181dd3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95fb9843c0ec69a4296ad95d55c6baf1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -680,7 +680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 55f9e5b4a09d8bc41a429b3d7df51026, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95c15c78e8e6ba74384611491b9fdf7f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -824,7 +824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad372b9d29e9d954ebc1e1b6e6ef2026, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84063120b9442d044a7a9bf763ee2bd8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.55
+  m_fontSize: 29.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 27d0017a9a1fef84f83255286293d03a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 82b595f1ee47a6e428db9866c0e8da69, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1361,7 +1361,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1474626420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caf3dc6aa0e380340a3d998763fb0012, type: 3}
+  m_Script: {fileID: 11500000, guid: 12e991e817a98f241ab922cba1bbee6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1490682961
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1426c80b4687be444bea246a59baa4d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 48607ebc4c77ae24a9b1eca8f54ea0b0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1692,7 +1692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 01ddbfbd460c7e546b2063263a408bbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e905003141410547bfcf9d1370ac86b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1744,7 +1744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.74, y: 0.54189783}
   m_AnchorMax: {x: 0.94900006, y: 0.6734233}
-  m_AnchoredPosition: {x: -6, y: 0.29999924}
+  m_AnchoredPosition: {x: -6, y: 0.30000305}
   m_SizeDelta: {x: -22.067902, y: -7.327301}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735643224
@@ -1767,7 +1767,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b642c8b0d2dd2a34dbe30095da181dd3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95fb9843c0ec69a4296ad95d55c6baf1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 36b2e6704a7dc1f4d8e2d5ae8e098986, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88255cd43567f9e48995c5d11802fba0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1917,7 +1917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad372b9d29e9d954ebc1e1b6e6ef2026, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84063120b9442d044a7a9bf763ee2bd8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

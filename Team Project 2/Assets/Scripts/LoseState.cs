@@ -21,7 +21,9 @@ public class LoseState : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-          SceneManager.LoadScene("Lose");  
+          SceneManager.LoadScene("Lose");
+          Cursor.lockState = CursorLockMode.None;
+          Cursor.visible = true;
         }
     }
 
