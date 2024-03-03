@@ -17,6 +17,12 @@ public class enemyNavmesh : MonoBehaviour
     public bool playerInSight;
 
     private bool stunned;
+    Animator animator;
+
+    void Start()
+{
+     animator = GetComponent<Animator>();
+}
 
     private void Awake()
     {
@@ -25,6 +31,8 @@ public class enemyNavmesh : MonoBehaviour
     private void Update()
     {
         playerInSight = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        animator.SetFloat("Move X", 1);
+        animator.SetFloat("Move Y", 0);
 
         if (Throwable.doesDistractionExist == true)
         {
