@@ -1,16 +1,18 @@
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Throwable : MonoBehaviour
 {
+    public Text dollCounter;
     [Header("References")]
     public Transform cam;
     public Transform attackPoint;
     public GameObject objectToThrow;
 
     [Header("Settings")]
-    public int totalThrows;
+    static public int totalThrows;
     public float throwCooldown;
 
     [Header("Throwing")]
@@ -27,6 +29,12 @@ public class Throwable : MonoBehaviour
     {
         readyToThrow = true;
         doesDistractionExist = false;
+
+        if(Infinite.isCheating == false)
+        {
+            totalThrows = 3;
+        }
+
     }
 
     private void Update()
@@ -35,6 +43,7 @@ public class Throwable : MonoBehaviour
         {
             Throw();
         }
+       
     }
 
     private void Throw()
@@ -65,7 +74,10 @@ public class Throwable : MonoBehaviour
 
         projectileRb.AddForce(forceToAdd, ForceMode.Impulse);
 
-        totalThrows--;
+            totalThrows--;
+            dollCounter.text = "Dolls:" + totalThrows.ToString();
+       
+        
 
         //implement throwCooldown
         Invoke(nameof(ResetThrow), throwCooldown);
@@ -80,5 +92,6 @@ public class Throwable : MonoBehaviour
     {
         doesDistractionExist = false;
     }
+
 
 }
