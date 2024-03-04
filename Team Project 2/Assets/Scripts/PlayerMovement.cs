@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private AudioSource audioSource;
+
     [Header("Movement")]
     public float moveSpeed;
     
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
         rb.freezeRotation = true;
         readyToJump = true;
 
@@ -80,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
+            audioSource.Play();
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }

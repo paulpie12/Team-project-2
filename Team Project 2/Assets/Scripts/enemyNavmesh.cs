@@ -18,10 +18,12 @@ public class enemyNavmesh : MonoBehaviour
 
     private bool stunned;
     Animator animator;
+    private AudioSource audioSource;
 
     void Start()
 {
      animator = GetComponent<Animator>();
+     audioSource = GetComponent<AudioSource>();
 }
 
     private void Awake()
@@ -31,6 +33,7 @@ public class enemyNavmesh : MonoBehaviour
     private void Update()
     {
         playerInSight = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        audioSource.Play();
         animator.SetFloat("Move X", 1);
         animator.SetFloat("Move Y", 0);
 
